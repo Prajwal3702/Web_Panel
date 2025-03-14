@@ -83,13 +83,104 @@
   margin: 0.5rem 0;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .content {
+    display: flex
     grid-template-columns: 1fr;
   }
   
   .poster {
+    display: flexbox;
     max-width: 300px;
     margin: 0 auto;
+  }
+} */
+
+/* ...existing code... */
+
+@media screen and (max-width: 768px) {
+  .movie-detail {
+    min-height: 100%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .poster {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .info {
+    padding: 0;
+    text-align: center;
+  }
+
+  .info h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .meta {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .genres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .genre {
+    margin: 0;
+  }
+
+  .overview {
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 0.5rem;
+  }
+
+  .additional-info {
+    padding: 1rem;
+    margin: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 1rem;
+  }
+
+  .poster {
+    max-width: 220px;
+  }
+
+  .info h1 {
+    font-size: 1.5rem;
+  }
+
+  .meta {
+    font-size: 0.9rem;
+  }
+
+  .genre {
+    font-size: 0.85rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .overview {
+    font-size: 0.95rem;
+  }
+
+  .additional-info {
+    font-size: 0.9rem;
   }
 }

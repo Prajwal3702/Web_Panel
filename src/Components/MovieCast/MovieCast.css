@@ -1,11 +1,13 @@
+
 .movie-cast {
   padding: 2rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   margin-top: 2rem;
-  overflow-x: auto;
+  overflow-x: auto; 
   width: 75vw;
 }
+
 .movie-cast h2 {
   color: white;
   margin-bottom: 1.5rem;
@@ -19,7 +21,6 @@
   padding-bottom: 1rem;
   min-width: min-content;
 }
-
 .cast-card {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
@@ -96,6 +97,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.4);
 }
+
 @media screen and (max-width: 768px) {
   .movie-cast {
     padding: 1.5rem;
