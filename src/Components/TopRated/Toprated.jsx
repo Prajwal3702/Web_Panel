@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./TopRated.css";
 
 const API_KEY = "c45a857c193f6302f2b5061c3b85e743";
@@ -36,7 +37,7 @@ const TopRated = () => {
       <h2>Top Rated Movies</h2>
       <div className="movies-grid">
         {movies.map((movie) => (
-          <div key={movie.id} className="movie-card">
+          <Link to={`/movie/${movie.id}`} key={movie.id} className="movie-card">
             <img
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt={movie.title}
@@ -48,7 +49,7 @@ const TopRated = () => {
                 {new Date(movie.release_date).getFullYear()}
               </p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

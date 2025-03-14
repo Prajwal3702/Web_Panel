@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Upcoming.css";
 
 const API_KEY = "c45a857c193f6302f2b5061c3b85e743";
@@ -36,7 +37,7 @@ const Upcoming = () => {
       <h2>Upcoming Movies</h2>
       <div className="movies-grid">
         {movies.map((movie) => (
-          <div key={movie.id} className="movie-card">
+          <Link to={`/movie/${movie.id}`} key={movie.id} className="movie-card">
             <div className="movie-poster">
               <img
                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
@@ -50,7 +51,7 @@ const Upcoming = () => {
               <h3>{movie.title}</h3>
               <p className="overview">{movie.overview.slice(0, 100)}...</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

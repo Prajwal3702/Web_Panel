@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, Link } from "react-router-dom";
 import "./Search.css";
 
 const API_KEY = "c45a857c193f6302f2b5061c3b85e743";
@@ -44,7 +44,7 @@ const Search = () => {
       <h2>Search Results for: {query}</h2>
       <div className="movies-grid">
         {movies.map((movie) => (
-          <div key={movie.id} className="movie-card">
+          <Link to={`/movie/${movie.id}`} key={movie.id} className="movie-card">
             <img
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt={movie.title}
@@ -59,7 +59,7 @@ const Search = () => {
               </p>
               <p className="rating">⭐ {movie.vote_average.toFixed(1)}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

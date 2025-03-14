@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 const API_KEY = "c45a857c193f6302f2b5061c3b85e743";
@@ -36,15 +37,17 @@ const Home = () => {
       <h1>Popular Movies</h1>
       <div className="movies-grid">
         {movies.map((movie) => (
-          <div key={movie.id} className="movie-card">
+          <Link to={`/movie/${movie.id}`} key={movie.id} className="movie-card">
             <img
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt={movie.title}
             />
-            <h2>{movie.title}</h2>
-            <p>{movie.release_date}</p>
-            <p>Rating: {movie.vote_average}</p>
-          </div>
+            <div className="movie-info">
+              <h2>{movie.title}</h2>
+              <p>{new Date(movie.release_date).getFullYear()}</p>
+              <p>⭐ {movie.vote_average.toFixed(1)}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
