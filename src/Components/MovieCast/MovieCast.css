@@ -96,6 +96,82 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.4);
 }
+@media screen and (max-width: 768px) {
+  .movie-cast {
+    padding: 1.5rem;
+    width: 90vw;
+    margin-top: 1.5rem;
+  }
 
+  .movie-cast h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .cast-grid {
+    gap: 1rem;
+  }
+
+  .cast-card {
+    flex: 0 0 120px;
+    width: 120px;
+  }
+
+  .cast-image {
+    height: 180px;
+  }
+
+  .cast-info {
+    padding: 0.6rem;
+  }
+
+  .cast-info h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .cast-info p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .movie-cast {
+    padding: 1rem;
+    width: 95vw;
+  }
+
+  .movie-cast h2 {
+    font-size: 1.3rem;
+  }
+
+  .cast-grid {
+    gap: 0.8rem;
+  }
+
+  .cast-card {
+    flex: 0 0 110px;
+    width: 110px;
+  }
+
+  .cast-image {
+    height: 165px;
+  }
+
+  .cast-info {
+    padding: 0.5rem;
+  }
+
+  .cast-info h3 {
+    font-size: 0.85rem;
+  }
+
+  .cast-info p {
+    font-size: 0.75rem;
+  }
+
+  ::-webkit-scrollbar {
+    height: 6px;
+  }
+}
 
 
