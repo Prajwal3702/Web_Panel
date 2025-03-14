@@ -82,22 +82,6 @@
 .additional-info p {
   margin: 0.5rem 0;
 }
-
-/* @media (max-width: 768px) {
-  .content {
-    display: flex
-    grid-template-columns: 1fr;
-  }
-  
-  .poster {
-    display: flexbox;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-} */
-
-/* ...existing code... */
-
 @media screen and (max-width: 768px) {
   .movie-detail {
     min-height: 100%;
