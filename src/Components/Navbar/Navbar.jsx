@@ -18,9 +18,6 @@ export const Navbar = () => {
     <nav className="navbar">
       <h1>Movie$PK</h1>
       <ul className="navbar-links">
-        {/* <li>
-          <Link to="/"></Link>
-        </li> */}
         <li>
           <Link to="/">Popular</Link>
         </li>

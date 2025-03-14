@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import MovieCast from "../MovieCast/MovieCast";
 import "./MovieDetail.css";
 
 const API_KEY = "c45a857c193f6302f2b5061c3b85e743";
@@ -81,6 +82,7 @@ const MovieDetail = () => {
             </p>
           </div>
         </div>
+        <MovieCast movieId={id} />
       </div>
     </div>
   );
