@@ -102,9 +102,10 @@
 @media screen and (max-width: 768px) {
   .movie-cast {
     padding: 1rem;
-    width: 100%;
+    width: 90%;
     margin: 1rem auto;
     background: rgba(255, 255, 255, 0.08);
+    
   }
 
   .movie-cast h2 {
@@ -120,6 +121,7 @@
     gap: 1rem;
     padding: 0.5rem 0.2rem;
     -webkit-overflow-scrolling: touch;
+    
   }
 
   .cast-card {
