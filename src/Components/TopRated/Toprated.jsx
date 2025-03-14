@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./TopRated.css";
+import "./Toprated.css";
 
 const API_KEY = "c45a857c193f6302f2b5061c3b85e743";
 const API_URL = `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=en-US&page=1`;
